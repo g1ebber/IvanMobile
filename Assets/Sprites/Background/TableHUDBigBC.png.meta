@@ -1,0 +1,761 @@
+fileFormatVersion: 2
+guid: e373a028af1fa7b45821646b87e79ca5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TableHUDBigBC_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 998
+        width: 2733
+        height: 1953
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18567d9572f5ffa4dab8467256e7514e
+      internalID: 95666086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 588
+        width: 363
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff1352624e265741af35c73bd84caac
+      internalID: 26127549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 538
+        width: 423
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d764888e5fd4bb4d842b349e032ca41
+      internalID: -2032710782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_3
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 528
+        width: 423
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e9073978092e043a058e2f8203e4bc
+      internalID: 1155870871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_4
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 549
+        width: 384
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eebad9326d4227479acdaaf9245e7ca
+      internalID: -2047840147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 219
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ad23d639dfa7a448b88e1adf0f1f98
+      internalID: -622741238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 219
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec18d202e2e1ef4daff7d517019e5f4
+      internalID: 1704474444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_7
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 238
+        width: 163
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b9bbcb1f8d65f40baf9132cd201bce
+      internalID: -1232659947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_8
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 238
+        width: 162
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957dec48e5e13584f8fba18a99a098a1
+      internalID: -278934327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_9
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 279
+        width: 164
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146f33fb4cd40344787e06ed5e8da884
+      internalID: 823853871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_10
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 238
+        width: 124
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067ddfaeb38114d43b4745bd26987285
+      internalID: -316244130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_11
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 219
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f274ea5b934644d4fbd429158ff9829b
+      internalID: 1840477105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_12
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 219
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1f5f6e0357d0046ace45c674afac69
+      internalID: -426584277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_13
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 228
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91f3a97fc8c07a468ecda64176a6a5e
+      internalID: 1913416508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_14
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 228
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736a98e561aec814da2b537fffd9bc29
+      internalID: -1118990981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_15
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 269
+        width: 183
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15e5f4af041af8498da330a77a50e27
+      internalID: -93115818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_16
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 228
+        width: 144
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef28e1108c1c57a46a80bae5cfc187c4
+      internalID: 252065228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 18
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ade0ba9b0af45e459a1bce31b782c6f
+      internalID: 34035705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 18
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f9a0476b0f71f4795f15c52f5006c1
+      internalID: 1646935449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_19
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 49
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d47f585fd8d4243aeadcf22b7c5de7
+      internalID: 1756131318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_20
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 49
+        width: 162
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1a3ca481b22c94e83c22e26a7e8953
+      internalID: -1554114863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_21
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 138
+        width: 164
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b0228d8fd5d3c438a76e6b603d8703
+      internalID: 1180546468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_22
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 68
+        width: 124
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b0f5093d5af141b4863c81405f18e
+      internalID: 1008724986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_23
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 18
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6dda3ac782866448ddd568e809f2be
+      internalID: 1582845238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_24
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 18
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d932c7e8866c86459f6c3c60ed235e7
+      internalID: 1903896745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_25
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 39
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9aeee920a5dcb4a80bf617bd2ef9e3
+      internalID: 1095086618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_26
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 39
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9869981f65239954ebd98d1a91436272
+      internalID: 1165870396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_27
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 118
+        width: 183
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a39a1e28eda1344914491c143dfa90
+      internalID: -510349144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TableHUDBigBC_28
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 29
+        width: 144
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7c47affe2595d4ea1d3ad11085d1a3
+      internalID: -80036500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TableHUDBigBC_11: 1840477105
+      TableHUDBigBC_26: 1165870396
+      TableHUDBigBC_14: -1118990981
+      TableHUDBigBC_18: 1646935449
+      TableHUDBigBC_16: 252065228
+      TableHUDBigBC_15: -93115818
+      TableHUDBigBC_23: 1582845238
+      TableHUDBigBC_10: -316244130
+      TableHUDBigBC_8: -278934327
+      TableHUDBigBC_2: -2032710782
+      TableHUDBigBC_0: 95666086
+      TableHUDBigBC_13: 1913416508
+      TableHUDBigBC_4: -2047840147
+      TableHUDBigBC_17: 34035705
+      TableHUDBigBC_25: 1095086618
+      TableHUDBigBC_19: 1756131318
+      TableHUDBigBC_1: 26127549
+      TableHUDBigBC_28: -80036500
+      TableHUDBigBC_3: 1155870871
+      TableHUDBigBC_5: -622741238
+      TableHUDBigBC_9: 823853871
+      TableHUDBigBC_22: 1008724986
+      TableHUDBigBC_20: -1554114863
+      TableHUDBigBC_12: -426584277
+      TableHUDBigBC_24: 1903896745
+      TableHUDBigBC_27: -510349144
+      TableHUDBigBC_7: -1232659947
+      TableHUDBigBC_6: 1704474444
+      TableHUDBigBC_21: 1180546468
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
