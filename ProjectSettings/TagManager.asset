@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Room
+  - DropValid
+  - DropInvalid
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - UI
   - Colliders
   - Character
-  - Objects
+  - Dragging
   - 
   - 
   - 

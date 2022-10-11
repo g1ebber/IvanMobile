@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragAndDropBox : MonoBehaviour
+public class DragAndDrop : MonoBehaviour
 {
-    private Vector3 _dragOffset; // for center fulcrum of an object
-    private Camera _cam; // main camera object
-   
-    private bool isCarry; // object status
+    // public Draggable LastDragged => _lastDragged;
+    
+    public delegate void DragEndedDelegate(DragAndDrop draggableObject); // for be able to snap this object
+    public DragEndedDelegate dragEndedCallback;
+
+    private Vector3 _dragOffset; // distance between center of an object and mouse pointer
+    private Camera _cam; // for calculating mouse position
+
+    private bool isDragActive; // drag status
     //private bool isInRoom;
     
     private float timer; // for checking type of controls: click or drag
@@ -21,7 +26,7 @@ public class DragAndDropBox : MonoBehaviour
 
     private void Update()
     {
-        if (isCarry)
+        if (isDragActive)
         {
             timer += Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, GetMousePos() + _dragOffset, _speed * Time.deltaTime);
@@ -30,14 +35,16 @@ public class DragAndDropBox : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("0");
-        if (Input.GetMouseButtonDown(0) && (isCarry == true))
+        // Debug.Log("0");
+        if (isDragActive == true)
         {
-            isCarry = false;
+            isDragActive = false;
+            // dragEndedCallback(this);
+            // Debug.Log("1");
         } 
         else
         {
-            isCarry = true;
+            isDragActive = true;
         }
 
 
@@ -48,8 +55,10 @@ public class DragAndDropBox : MonoBehaviour
     {
         if (timer > 0.1f)
         {
-            isCarry = false;
+            isDragActive = false;
             timer = 0f;
+            dragEndedCallback(this);
+            Debug.Log("2");
         }
     }
 
