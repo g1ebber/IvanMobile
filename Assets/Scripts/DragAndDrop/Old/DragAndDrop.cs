@@ -2,49 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ This is an old implementation of drag and drop functionality.
+ DragAndDrop is applied to the object. This object can be moved by clicking or holding the mouse button.
+ */
+
 public class DragAndDrop : MonoBehaviour
-{
-    // public Draggable LastDragged => _lastDragged;
-    
+{    
     public delegate void DragEndedDelegate(DragAndDrop draggableObject); // for be able to snap this object
     public DragEndedDelegate dragEndedCallback;
 
     private Vector3 _dragOffset; // distance between center of an object and mouse pointer
     private Camera _cam; // for calculating mouse position
 
-    private bool isDragActive; // drag status
-    //private bool isInRoom;
-    
-    private float timer; // for checking type of controls: click or drag
+    private bool _isDragActive; // drag status
+    private float _timer; // for checking type of controls: click or drag
     [SerializeField] private float _speed = 1000; // speed of an object following the cursor
 
     void Awake()
     {
-        timer = 0f;
+        _timer = 0f;
         _cam = Camera.main;
     }
 
     private void Update()
     {
-        if (isDragActive)
+        if (_isDragActive)
         {
-            timer += Time.deltaTime;
+            _timer += Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, GetMousePos() + _dragOffset, _speed * Time.deltaTime);
         }
     }
 
     void OnMouseDown()
     {
-        // Debug.Log("0");
-        if (isDragActive == true)
+        if (_isDragActive == true)
         {
-            isDragActive = false;
-            // dragEndedCallback(this);
-            // Debug.Log("1");
+            _isDragActive = false;
         } 
         else
         {
-            isDragActive = true;
+            _isDragActive = true;
         }
 
 
@@ -53,12 +51,11 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (timer > 0.1f)
+        if (_timer > 0.1f)
         {
-            isDragActive = false;
-            timer = 0f;
+            _isDragActive = false;
+            _timer = 0f;
             dragEndedCallback(this);
-            Debug.Log("2");
         }
     }
 
@@ -73,16 +70,4 @@ public class DragAndDrop : MonoBehaviour
         mousePos.z = 0;
         return mousePos;
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Room")
-    //    {
-    //        isInRoom = true;
-    //    }
-    //    else
-    //    {
-    //        isInRoom = false;
-    //    }
-    //}
 }

@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+This is an old implementation of snaping system.
+SnapController is applied to the object.
+This object will control the which objects can be dragged on which snap points exist.
+This implementation checks if the object is in a certain zone relative to the point + the animation is not smooth.
+ */
+
 public class SnapController : MonoBehaviour
 {
-    public List<Transform> snapPoints; // target snaps
-    public List<DragAndDrop> draggableObjects; // objects to snap
-    [SerializeField] private float snapRange = 1f; // snap area for snap point
-                                       // нужно заменить на другой тип привязки
+    public List<Transform> snapPoints;
+    public List<DragAndDrop> draggableObjects;
+    [SerializeField] private float snapRange = 1f;
 
     void Start()
     {
