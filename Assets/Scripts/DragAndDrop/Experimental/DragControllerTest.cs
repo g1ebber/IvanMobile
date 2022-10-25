@@ -13,7 +13,7 @@ Functional:
     - Avoiding overlapping items by repositioning in the closest valid position.
  */
 
-public class DragController : MonoBehaviour
+public class DragControllerTest : MonoBehaviour
 {
     public Draggable LastDragged => _lastDragged; // to be used in Draggable
     private Draggable _lastDragged; // to store the last dragged object
@@ -28,7 +28,7 @@ public class DragController : MonoBehaviour
     private void Awake()
     {
         _cam = Camera.main;
-        DragController[] controllers = FindObjectsOfType<DragController>();
+        DragControllerTest[] controllers = FindObjectsOfType<DragControllerTest>();
         if (controllers.Length > 1) // must be only 1 DragController
         {
             Destroy(gameObject);
