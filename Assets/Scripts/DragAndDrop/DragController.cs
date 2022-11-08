@@ -11,6 +11,7 @@ Functional:
     - Snapping inside another item if the drop is valid.
     - Going to the starting position if the drop is not valid.
     - Avoiding overlapping items by repositioning in the closest valid position.
+    - Does not allow to drag an object beyond the specified boundaries (which are set in Draggable object fields).
  */
 
 public class DragController : MonoBehaviour
@@ -80,7 +81,71 @@ public class DragController : MonoBehaviour
 
     void Drag()
     {
-        _lastDragged.transform.position = new Vector2(_worldPosition.x + _dragOffset.x, _worldPosition.y + _dragOffset.y);
+        //Debug.Log("Drag");
+
+        if (_worldPosition.y > _lastDragged.deadZoneTopY) // check if we cross top bounboundary
+        {
+            if (_worldPosition.x > _lastDragged.deadZoneRightX)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneRightX, _lastDragged.deadZoneTopY);
+            } else if (_worldPosition.x < _lastDragged.deadZoneLeftX)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneLeftX, _lastDragged.deadZoneTopY);
+            }
+            else
+            {
+                _lastDragged.transform.position = new Vector2(_worldPosition.x + _dragOffset.x, _lastDragged.deadZoneTopY);
+            }
+        } else if (_worldPosition.y < _lastDragged.deadZoneBotY) // check if we cross bottom bounboundary
+        {
+            if (_worldPosition.x > _lastDragged.deadZoneRightX)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneRightX, _lastDragged.deadZoneBotY);
+            }
+            else if (_worldPosition.x < _lastDragged.deadZoneLeftX)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneLeftX, _lastDragged.deadZoneBotY);
+            }
+            else
+            {
+                _lastDragged.transform.position = new Vector2(_worldPosition.x + _dragOffset.x, _lastDragged.deadZoneBotY);
+            }
+        }
+        else if (_worldPosition.x > _lastDragged.deadZoneRightX) // check if we cross right bounboundary
+        {
+            if (_worldPosition.y > _lastDragged.deadZoneTopY)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneRightX, _lastDragged.deadZoneTopY);
+            }
+            else if (_worldPosition.y < _lastDragged.deadZoneBotY)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneRightX, _lastDragged.deadZoneBotY);
+            }
+            else
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneRightX, _worldPosition.y + _dragOffset.y);
+            }
+        }
+        else if (_worldPosition.x < _lastDragged.deadZoneLeftX) // check if we cross left bounboundary
+        {
+            if (_worldPosition.y > _lastDragged.deadZoneTopY)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneLeftX, _lastDragged.deadZoneTopY);
+            }
+            else if (_worldPosition.y < _lastDragged.deadZoneBotY)
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneLeftX, _lastDragged.deadZoneBotY);
+            }
+            else
+            {
+                _lastDragged.transform.position = new Vector2(_lastDragged.deadZoneLeftX, _worldPosition.y + _dragOffset.y);
+            }
+        }
+        else // dragging free
+        {
+            _lastDragged.transform.position = new Vector2(_worldPosition.x + _dragOffset.x, _worldPosition.y + _dragOffset.y);
+        }
+
     }
 
     void Drop()

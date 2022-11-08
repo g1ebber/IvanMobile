@@ -29,6 +29,12 @@ public class Draggable : MonoBehaviour
     private float _movementTime = 15f; // speed of snapping
     public bool isDragging;
 
+    // Boundaries of dragging
+    public float deadZoneTopY = 100; // dead zone for object on top for Y position
+    public float deadZoneBotY = -100; // dead zone for object on bottom for Y position
+    public float deadZoneLeftX = -100; // dead zone for object on left for X position
+    public float deadZoneRightX = 100; // dead zone for object on right for X position
+
     private void Start()
     {
         _collider = GetComponent<Collider2D>();
